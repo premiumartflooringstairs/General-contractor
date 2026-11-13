@@ -1,0 +1,1674 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14283F">
+<meta name="description" content="Premium Art Flooring & Stairs provides professional residential and commercial flooring, wood floor installation, floor repair, staircase renovation and tile installation in St. Louis, MO.">
+
+<title>Premium Art Flooring & Stairs | St. Louis, MO</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark: #14283F;
+  --dark2: #1C344E;
+  --deep: #0C1726;
+  --silver: #A9B9C9;
+  --silver-light: #D5DFE9;
+  --cream: #F1F4F7;
+  --white: #FFFFFF;
+  --muted: #8797A8;
+  --font: 'DM Sans', sans-serif;
+  --heading: 'Playfair Display', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+.gold {
+  color: var(--silver);
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: #718BA5;
+  font-weight: 700;
+  margin-bottom: 17px;
+  display: inline-block;
+}
+
+.section-title {
+  font-family: var(--heading);
+  font-size: clamp(35px, 5vw, 54px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.section-desc {
+  color: #718092;
+  line-height: 1.9;
+  font-size: 14px;
+  max-width: 620px;
+  margin-top: 18px;
+}
+
+/* NAVIGATION */
+
+header {
+  height: 88px;
+  background: rgba(20,40,63,.98);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(169,185,201,.25);
+  transition: .3s;
+}
+
+header.scrolled {
+  height: 72px;
+  box-shadow: 0 5px 30px rgba(5,18,35,.3);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  min-width: 0;
+}
+
+.logo img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--silver);
+}
+
+.logo-text strong {
+  display: block;
+  font-family: var(--heading);
+  font-size: 17px;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.logo-text small {
+  color: var(--silver);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 27px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #E5EBF1;
+  font-size: 12px;
+  font-weight: 600;
+  transition: .3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 1px;
+  background: var(--silver);
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--silver-light);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-cta {
+  background: var(--silver);
+  color: var(--deep) !important;
+  padding: 13px 19px;
+  font-size: 11px !important;
+  letter-spacing: 1px;
+  font-weight: 700 !important;
+  transition: .3s;
+}
+
+.nav-cta:hover {
+  background: var(--silver-light);
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 760px;
+  height: 100vh;
+  max-height: 950px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(8,19,33,.94) 0%, rgba(12,29,49,.78) 48%, rgba(12,29,49,.28) 100%),
+    linear-gradient(0deg, rgba(8,19,33,.55), transparent 60%),
+    url('https://www.bobvila.com/wp-content/uploads/2023/09/The-Best-Time-to-Buy-Flooring-How-to-Determine.jpg?strip=all&quality=85') center/cover no-repeat;
+  color: white;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-bottom: 1px solid rgba(169,185,201,.35);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+  max-width: 760px;
+  animation: heroIn 1.2s ease both;
+}
+
+@keyframes heroIn {
+  from {opacity: 0; transform: translateY(35px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--silver-light);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.hero-tag::before {
+  content: '';
+  width: 38px;
+  height: 1px;
+  background: var(--silver);
+}
+
+.hero h1 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: clamp(46px, 7vw, 83px);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  color: var(--silver-light);
+  font-style: italic;
+}
+
+.hero p {
+  max-width: 570px;
+  line-height: 1.9;
+  color: #DCE4ED;
+  font-size: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 27px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+  border: 1px solid var(--silver);
+}
+
+.btn-primary {
+  background: var(--silver);
+  color: var(--deep);
+}
+
+.btn-primary:hover {
+  background: var(--silver-light);
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  color: white;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--silver);
+  color: var(--deep);
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-bottom span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #D5DFE9;
+  text-transform: uppercase;
+}
+
+/* TRUST STRIP */
+
+.trust-strip {
+  background: var(--deep);
+  color: white;
+  padding: 27px 0;
+  border-bottom: 1px solid rgba(169,185,201,.2);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.trust-item {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--silver-light);
+}
+
+.trust-item span {
+  display: block;
+  color: #A7B5C5;
+  font-size: 10px;
+  margin-top: 7px;
+  letter-spacing: 1px;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 115px 0;
+  background: var(--cream);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.about-content p {
+  color: #718092;
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 20px;
+}
+
+.about-visual {
+  position: relative;
+  padding: 0 25px 25px 0;
+}
+
+.about-frame {
+  position: absolute;
+  inset: 25px 0 0 25px;
+  border: 1px solid var(--silver);
+}
+
+.about-visual img {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.about-tag {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  background: var(--dark);
+  color: var(--silver-light);
+  padding: 19px 24px;
+  font-family: var(--heading);
+  font-size: 20px;
+}
+
+.about-features {
+  display: flex;
+  gap: 35px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.feature strong {
+  font-family: var(--heading);
+  font-size: 26px;
+  color: var(--dark);
+  display: block;
+}
+
+.feature span {
+  font-size: 10px;
+  color: #718092;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* SERVICES */
+
+.services {
+  padding: 110px 0;
+  background: #E4EAF0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-heading .section-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  background: white;
+  overflow: hidden;
+  transition: .4s;
+  border: 1px solid #D8E0E9;
+}
+
+.service-card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 20px 45px rgba(20,40,63,.13);
+}
+
+.service-image {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .7s;
+}
+
+.service-card:hover img {
+  transform: scale(1.08);
+}
+
+.service-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--silver);
+  color: var(--deep);
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.service-info {
+  padding: 24px 19px 26px;
+}
+
+.service-info h3 {
+  font-family: var(--heading);
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.service-info p {
+  font-size: 12px;
+  color: #718092;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.service-link {
+  color: #536E8A;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.service-link:hover {
+  color: var(--dark);
+}
+
+/* COMMERCIAL & RESIDENTIAL */
+
+.audience {
+  background: var(--dark);
+  padding: 95px 0;
+  color: white;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+}
+
+.audience-card {
+  padding: 35px 0;
+  border-top: 1px solid rgba(169,185,201,.55);
+}
+
+.audience-card .icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.audience-card h3 {
+  font-family: var(--heading);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--silver-light);
+  margin-bottom: 15px;
+}
+
+.audience-card p {
+  color: #C1CCD8;
+  line-height: 1.9;
+  font-size: 13px;
+}
+
+/* CTA */
+
+.cta {
+  padding: 90px 20px;
+  background: var(--silver);
+  text-align: center;
+}
+
+.cta h2 {
+  font-family: var(--heading);
+  font-size: clamp(33px, 5vw, 48px);
+  font-weight: 500;
+  color: var(--deep);
+}
+
+.cta p {
+  margin: 15px auto 27px;
+  color: #344A60;
+  font-size: 14px;
+}
+
+.cta .btn {
+  background: var(--dark);
+  color: white;
+  border-color: var(--dark);
+}
+
+.cta .btn:hover {
+  background: transparent;
+  color: var(--dark);
+}
+
+/* REVIEWS */
+
+.reviews {
+  padding: 110px 0;
+  background: var(--cream);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.review-card {
+  padding: 32px 27px;
+  background: white;
+  border-bottom: 3px solid var(--silver);
+  transition: .3s;
+}
+
+.review-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(20,40,63,.09);
+}
+
+.stars {
+  color: #718BA5;
+  letter-spacing: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.review-card blockquote {
+  color: #718092;
+  font-size: 13px;
+  line-height: 1.9;
+  font-style: italic;
+  min-height: 115px;
+}
+
+.reviewer {
+  border-top: 1px solid #E0E6ED;
+  padding-top: 19px;
+  margin-top: 20px;
+}
+
+.reviewer strong {
+  display: block;
+  font-family: var(--heading);
+  font-size: 18px;
+}
+
+.reviewer small {
+  color: #8797A8;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* FAQ */
+
+.faq {
+  padding: 105px 0;
+  background: #E4EAF0;
+}
+
+.faq-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #CBD5DF;
+}
+
+.faq-question {
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--heading);
+  font-size: 19px;
+  gap: 20px;
+}
+
+.faq-question span:last-child {
+  color: #536E8A;
+  font-size: 23px;
+  transition: .3s;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  color: #647589;
+  font-size: 13px;
+  line-height: 1.9;
+  transition: max-height .4s, padding .4s;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 180px;
+  padding-bottom: 22px;
+}
+
+.faq-item.active .faq-question span:last-child {
+  transform: rotate(45deg);
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 110px 0;
+  background: var(--deep);
+  color: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info > p {
+  color: #AEBECD;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-top: 18px;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 16px;
+  margin-top: 29px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  color: var(--silver);
+  font-size: 19px;
+  width: 25px;
+}
+
+.contact-detail strong {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 7px;
+  color: var(--silver-light);
+  letter-spacing: 1px;
+}
+
+.contact-detail p,
+.contact-detail a {
+  font-size: 12px;
+  color: #C1CCD8;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.contact-detail a:hover {
+  color: var(--silver-light);
+}
+
+.hours {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #34485E;
+}
+
+.hours h3 {
+  color: var(--silver-light);
+  font-family: var(--heading);
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #B6C2D0;
+  font-size: 11px;
+  padding: 9px 0;
+  border-bottom: 1px solid #26394E;
+}
+
+.hours-row span:last-child {
+  color: var(--silver-light);
+  text-align: right;
+}
+
+.map-wrap {
+  background: #1B3048;
+  padding: 12px;
+  border: 1px solid rgba(169,185,201,.4);
+}
+
+.map-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+  filter: grayscale(35%);
+}
+
+.map-caption {
+  padding: 15px 5px 5px;
+  font-size: 11px;
+  color: #C1CCD8;
+}
+
+/* FOOTER */
+
+footer {
+  background: #081321;
+  color: white;
+  padding: 65px 0 25px;
+  border-top: 1px solid rgba(169,185,201,.25);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 45px;
+}
+
+.footer-brand img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--silver);
+  margin-bottom: 17px;
+}
+
+.footer-brand h3 {
+  font-family: var(--heading);
+  color: var(--silver-light);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.footer-brand p {
+  color: #A0AFBF;
+  font-size: 12px;
+  line-height: 1.9;
+  margin-top: 15px;
+  max-width: 320px;
+}
+
+.footer-column h4 {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--silver);
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.footer-column a {
+  display: block;
+  color: #AEBECD;
+  font-size: 12px;
+  margin-bottom: 14px;
+  transition: .3s;
+}
+
+.footer-column a:hover {
+  color: var(--silver-light);
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  padding-top: 23px;
+  border-top: 1px solid #26394E;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #8192A4;
+  font-size: 10px;
+}
+
+/* FLOATING CALL */
+
+.float-call {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  z-index: 900;
+  width: 55px;
+  height: 55px;
+  background: var(--silver);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: var(--deep);
+  box-shadow: 0 5px 25px rgba(0,0,0,.3);
+  transition: .3s;
+}
+
+.float-call:hover {
+  transform: scale(1.1);
+  background: var(--silver-light);
+}
+
+/* SCROLL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1000px) {
+  .nav-links { gap: 15px; }
+  .logo-text strong { font-size: 14px; }
+  .logo img { width: 47px; height: 47px; }
+  .nav-cta { display: none; }
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 760px) {
+  header { height: 75px; }
+  .logo img { width: 46px; height: 46px; }
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: var(--dark);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 5%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s, padding .4s;
+  }
+
+  .nav-links.open {
+    max-height: 430px;
+    padding: 15px 5% 25px;
+    border-top: 1px solid #52677D;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid #34485E;
+  }
+
+  .nav-links a::after { display: none; }
+
+  .hero {
+    min-height: 690px;
+    height: 90vh;
+    background-position: 58% center;
+  }
+
+  .hero-content { padding-top: 45px; }
+  .hero-bottom { bottom: 25px; }
+  .hero-bottom span { font-size: 8px; letter-spacing: 1px; }
+
+  .trust-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  .about, .services, .reviews, .faq, .contact {
+    padding: 75px 0;
+  }
+
+  .about-grid, .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-visual img { height: 310px; }
+  .service-grid { grid-template-columns: 1fr 1fr; gap: 13px; }
+  .service-image { height: 175px; }
+  .service-info { padding: 17px 13px; }
+  .service-info h3 { font-size: 17px; }
+  .service-info p { font-size: 11px; }
+
+  .audience-grid { grid-template-columns: 1fr; gap: 20px; }
+  .review-grid { grid-template-columns: 1fr; }
+  .review-card blockquote { min-height: auto; }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media(max-width: 420px) {
+  .service-grid { grid-template-columns: 1fr; }
+  .service-image { height: 230px; }
+  .hero h1 { font-size: 45px; }
+  .hero-buttons .btn { width: 100%; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: auto; }
+  .hours-row { font-size: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header id="header">
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+      <img src="https://lh6.googleusercontent.com/-qoMzFqQTAe8/AAAAAAAAAAI/AAAAAAAAAAA/Crpfh-HViKc/s450-c-k-mo/photo.jpg" alt="Premium Art Flooring logo">
+      <div class="logo-text">
+        <strong>Premium Art Flooring</strong>
+        <small>& Stairs · St. Louis</small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+    </ul>
+
+    <a href="tel:+13143083249" class="nav-cta">GET A QUOTE ↗</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-tag">Premium Flooring · St. Louis, MO</div>
+
+      <h1>
+        Beautiful Floors.<br>
+        <span>Exceptional Living.</span>
+      </h1>
+
+      <p>
+        Welcome to Premium Art Flooring & Stairs. Transform your residential
+        or commercial space with elegant flooring, expert installation,
+        beautiful staircase renovations and professional craftsmanship.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">Explore Our Services ↗</a>
+        <a href="tel:+13143083249" class="btn btn-outline">Call (314) 308-3249</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero-bottom">
+    <span>Residential & Commercial</span>
+    <span>Craftsmanship Meets Elegance</span>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      Residential Flooring
+      <span>Beautiful spaces start here</span>
+    </div>
+    <div class="trust-item">
+      Commercial Flooring
+      <span>Professional flooring solutions</span>
+    </div>
+    <div class="trust-item">
+      Flooring & Stair Experts
+      <span>Quality in every detail</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-content reveal">
+      <span class="section-label">About Our Company</span>
+
+      <h2 class="section-title">
+        The Art of Beautiful
+        <span class="gold">Flooring.</span>
+      </h2>
+
+      <p>
+        Welcome to Premium Art Flooring & Stairs, providing professional
+        general contracting and flooring services in St. Louis, Missouri.
+      </p>
+
+      <p>
+        We specialize in wood floor installation, hardwood flooring,
+        floor refinishing, repairs, custom staining, staircase renovation,
+        stair cage, gum flooring, tile installation and engineered wood
+        flooring.
+      </p>
+
+      <p>
+        Whether you're upgrading your home or improving a commercial
+        property, our goal is to help transform your space with flooring
+        solutions that complement your style.
+      </p>
+
+      <div class="about-features">
+        <div class="feature">
+          <strong>Residential</strong>
+          <span>Home Flooring</span>
+        </div>
+        <div class="feature">
+          <strong>Commercial</strong>
+          <span>Business Flooring</span>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-primary" style="margin-top:32px;">
+        Contact Our Team ↗
+      </a>
+    </div>
+
+    <div class="about-visual reveal">
+      <div class="about-frame"></div>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0053/7575/4338/files/hard-surface-floor-installation-section-2_1024x1024.jpg?v=1667376683"
+        alt="Professional flooring installation">
+      <div class="about-tag">Designed to Impress.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Our Flooring <span class="gold">Services</span></h2>
+      <p class="section-desc">
+        Professional flooring and renovation solutions for residential
+        and commercial properties in St. Louis, MO.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card reveal">
+        <div class="service-image">
+          <span class="service-number">01</span>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0053/7575/4338/files/hard-surface-floor-installation-section-2_1024x1024.jpg?v=1667376683"
+            alt="Wood floor installation">
+        </div>
+        <div class="service-info">
+          <h3>Wood Floor Installation</h3>
+          <p>
+            Enhance your space with beautiful wood flooring and
+            professional installation for homes and businesses.
+          </p>
+          <a href="tel:+13143083249" class="service-link">Request Service ↗</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-image">
+          <span class="service-number">02</span>
+          <img
+            src="https://i0.wp.com/www.nationwidepropertymaintenance.com/wp-content/uploads/2017/11/flooring-repairs-11.jpg?ssl=1"
+            alt="Professional floor repair">
+        </div>
+        <div class="service-info">
+          <h3>Floor Repair</h3>
+          <p>
+            Restore the appearance and functionality of damaged
+            flooring with professional repair solutions.
+          </p>
+          <a href="tel:+13143083249" class="service-link">Request Service ↗</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-image">
+          <span class="service-number">03</span>
+          <img
+            src="https://i.pinimg.com/originals/af/91/2d/af912d484da29e097e1bd99d1d58e71b.jpg?nii=t"
+            alt="Elegant staircase renovation">
+        </div>
+        <div class="service-info">
+          <h3>Staircase Renovation</h3>
+          <p>
+            Upgrade your staircase with stylish finishes and
+            carefully executed renovation work.
+          </p>
+          <a href="tel:+13143083249" class="service-link">Request Service ↗</a>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-image">
+          <span class="service-number">04</span>
+          <img
+            src="https://i.pinimg.com/736x/67/d5/1f/67d51f35b15991b9561e582ad7a8e8e3.jpg"
+            alt="Luxury tile installation">
+        </div>
+        <div class="service-info">
+          <h3>Tile Installation</h3>
+          <p>
+            Create sophisticated surfaces with professional tile
+            installation for residential and commercial spaces.
+          </p>
+          <a href="tel:+13143083249" class="service-link">Request Service ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESIDENTIAL & COMMERCIAL -->
+<section class="audience">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-label">Who We Serve</span>
+      <h2 class="section-title" style="color:white;">
+        Flooring for Every <span class="gold">Space.</span>
+      </h2>
+      <p class="section-desc" style="color:#B6C4D3;">
+        From personal living spaces to professional business environments,
+        discover flooring solutions designed around your property.
+      </p>
+    </div>
+
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <div class="icon">⌂</div>
+        <h3>Residential Flooring</h3>
+        <p>
+          Give your home a fresh new look with wood floor installation,
+          repairs, staircase renovations and beautiful tile work.
+          Create inviting spaces that reflect your personal style.
+        </p>
+      </div>
+
+      <div class="audience-card reveal">
+        <div class="icon">▤</div>
+        <h3>Commercial Flooring</h3>
+        <p>
+          Enhance your business environment with professional flooring
+          solutions. We provide installation and renovation services
+          for commercial properties and workspaces.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta reveal">
+  <h2>Ready to Transform Your Floors?</h2>
+  <p>Let's discuss your next flooring or staircase renovation project.</p>
+  <a href="tel:+13143083249" class="btn">Call Us Today ↗</a>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="section-label">Customer Experiences</span>
+      <h2 class="section-title">Words That <span class="gold">Matter.</span></h2>
+      <p class="section-desc">
+        Customer feedback helps others discover the right flooring
+        professionals for their next project.
+      </p>
+    </div>
+
+    <div class="review-grid">
+
+      <article class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          "Add a genuine customer review about the flooring installation,
+          quality of workmanship and overall experience here."
+        </blockquote>
+        <div class="reviewer">
+          <strong>Michael R.</strong>
+          <small>Sample testimonial — replace with verified review</small>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          "Add a genuine customer review about the service, communication
+          and results of their flooring or renovation project here."
+        </blockquote>
+        <div class="reviewer">
+          <strong>Sarah T.</strong>
+          <small>Sample testimonial — replace with verified review</small>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          "Add a genuine customer review describing their experience
+          with Premium Art Flooring & Stairs here."
+        </blockquote>
+        <div class="reviewer">
+          <strong>David M.</strong>
+          <small>Sample testimonial — replace with verified review</small>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:35px;">
+      <a href="https://g.page/r/CcdA1c--wVONEBM/"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-primary">
+        Visit Our Google Business Profile ↗
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQS -->
+<section class="faq" id="faqs">
+  <div class="container faq-container">
+
+    <div class="section-heading reveal">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h2 class="section-title">Questions & <span class="gold">Answers.</span></h2>
+      <p class="section-desc">
+        Find helpful information about our flooring and renovation services.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What flooring services do you offer?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        We specialize in wood floor installation, hardwood flooring,
+        floor refinishing, repairs, custom staining, staircase renovation,
+        stair cage, gum flooring, tile installation and engineered wood flooring.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you provide residential and commercial services?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Premium Art Flooring & Stairs provides flooring and renovation
+        services for both residential and commercial properties.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you offer floor repair services?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Yes. We offer floor repair services to help restore damaged
+        flooring. Contact us to discuss your project.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Where are you located?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        We are located at 1150 N Price Rd, St. Louis, MO 63132.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How can I request a flooring service?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Call us at (314) 308-3249 or email
+        Lucas.premiumflooring@gmail.com to discuss your project.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What are your business hours?</span>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Monday to Wednesday: 7:30 AM – 6:30 PM.
+        Thursday: 7 AM – 6:30 PM.
+        Friday: 7 AM – 7:30 PM.
+        Saturday: 8 AM – 5:30 PM.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title" style="color:white;">
+        Let's Start Your <span class="gold">Project.</span>
+      </h2>
+      <p class="section-desc" style="color:#B6C4D3;">
+        Contact Premium Art Flooring & Stairs today to discuss your
+        flooring installation, repair or renovation needs.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+
+        <div class="contact-detail">
+          <div class="contact-icon">⌖</div>
+          <div>
+            <strong>OUR LOCATION</strong>
+            <p>1150 N Price Rd<br>St. Louis, MO 63132</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">☎</div>
+          <div>
+            <strong>PHONE NUMBER</strong>
+            <a href="tel:+13143083249">(314) 308-3249</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉</div>
+          <div>
+            <strong>EMAIL ADDRESS</strong>
+            <a href="mailto:Lucas.premiumflooring@gmail.com">
+              Lucas.premiumflooring@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">◷</div>
+          <div>
+            <strong>BUSINESS HOURS</strong>
+            <p>Monday – Saturday</p>
+          </div>
+        </div>
+
+        <div class="hours">
+          <h3>Opening Hours</h3>
+
+          <div class="hours-row">
+            <span>Monday – Wednesday</span>
+            <span>7:30 AM – 6:30 PM</span>
+          </div>
+
+          <div class="hours-row">
+            <span>Thursday</span>
+            <span>7 AM – 6:30 PM</span>
+          </div>
+
+          <div class="hours-row">
+            <span>Friday</span>
+            <span>7 AM – 7:30 PM</span>
+          </div>
+
+          <div class="hours-row">
+            <span>Saturday</span>
+            <span>8 AM – 5:30 PM</span>
+          </div>
+
+          <div class="hours-row">
+            <span>Sunday</span>
+            <span>Hours not provided</span>
+          </div>
+        </div>
+
+        <a href="https://g.page/r/CcdA1c--wVONEBM/"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary" style="margin-top:30px;">
+          Find Us on Google ↗
+        </a>
+
+      </div>
+
+      <!-- GOOGLE MAP -->
+      <div class="map-wrap reveal">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199363.1359376627!2d-90.35300245!3d38.67074194999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa57dac23ba3bf077%3A0x8d53c1becfd540c7!2sPremium%20Art%20Flooring%20%26%20stairs!5e0!3m2!1sen!2s!4v1794601505439!5m2!1sen!2s"
+          width="400"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Premium Art Flooring and Stairs Google Map">
+        </iframe>
+
+        <div class="map-caption">
+          Premium Art Flooring & Stairs · St. Louis, Missouri
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img
+          src="https://lh6.googleusercontent.com/-qoMzFqQTAe8/AAAAAAAAAAI/AAAAAAAAAAA/Crpfh-HViKc/s450-c-k-mo/photo.jpg"
+          alt="Premium Art Flooring logo">
+
+        <h3>Premium Art Flooring & Stairs</h3>
+
+        <p>
+          Professional residential and commercial flooring services
+          in St. Louis, Missouri. Transforming spaces with beautiful
+          flooring and staircase solutions.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#faqs">FAQs</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect With Us</h4>
+        <a href="tel:+13143083249">Call: (314) 308-3249</a>
+        <a href="mailto:Lucas.premiumflooring@gmail.com">Send Email</a>
+        <a href="https://g.page/r/CcdA1c--wVONEBM/"
+           target="_blank" rel="noopener noreferrer">
+          Google Business Profile ↗
+        </a>
+        <a href="#contact">Our Location</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Premium Art Flooring & Stairs. All Rights Reserved.</span>
+      <span>Designed for Beautiful Spaces.</span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:+13143083249" class="float-call" aria-label="Call Premium Art Flooring">
+  ☎
+</a>
+
+<script>
+
+// MOBILE NAVIGATION
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+  menuToggle.innerHTML = isOpen ? '✕' : '☰';
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.innerHTML = '☰';
+  });
+});
+
+// HEADER SCROLL EFFECT
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle(
+    'scrolled', window.scrollY > 50
+  );
+});
+
+// SCROLL REVEAL ANIMATION
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(element => {
+  observer.observe(element);
+});
+
+// FAQ ACCORDION
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const item = question.parentElement;
+    const wasActive = item.classList.contains('active');
+
+    document.querySelectorAll('.faq-item').forEach(faq => {
+      faq.classList.remove('active');
+    });
+
+    if (!wasActive) {
+      item.classList.add('active');
+    }
+  });
+});
+
+// AUTOMATIC COPYRIGHT YEAR
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
